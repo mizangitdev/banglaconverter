@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bangla Converter | বাংলা কনভার্টার</title>
+	<link rel="shortcut icon" type="image/jpg" href="./images/logo.png"/>
+    <meta name="Title" content="Bangla Unicode Converter;">
+    <meta name="description" content="Bijoy (ASCII) to Unicode Bangla Converter for Converting bangla in both way.">
+    <meta name="keywords" content="Bangla converter, bijoy to Unicode">
+    <meta name="author" content="Md. Mizanur Rahman (Mihan), Officer-IT, Janata Bank Limited">
+    <link href="./css/designs.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="./js/b2u.js"></script>
+    <script type="text/javascript" src="./js/u2b.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/layout.js"></script>
+    <script type="text/javascript" src="./js/js1.js"></script>
+
+</head>
+<body>
+	<table width="100%" align="center" style="margin: auto;">
+		<tbody>
+			<h1 style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;">বিজয় - ইউনিকোড কনভার্টার</h1>
+			<br/>
+			<div style="font-family: Arial,Solaimanlipi, Helvetica, sans-serif; font-size: auto; -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" unselectable="on" onselectstart="return false;" onmousedown="return false;" align="center" >
+				<b>ব্যবহার বিধিঃ</b> প্রথম বাক্সটি ইউনিকোডে লেখার যায়গা এবং দ্বিতীয় বাক্সটি বিজয়ে লেখার যায়গা। 
+                        আপনার প্রয়োজনীয় লেখাগুলো নির্দিষ্ট বাক্সে বসিয়ে মাঝখানের বাটন ব্যবহার করে লেখা রুপান্তর করুন।
+			</div>
+			<tr>
+				<td align="center">
+                    <div>
+                        <textarea class="unicode_textarea" id="EDT" name="textarea" autofocus="autofocus" value="" placeholder="ইউনিকোড কি-বোর্ডের লেখা এখানে পেস্ট করুন"></textarea>
+                    </div>
+                </td>
+			</tr>
+			<tr>
+				<td align="center" height="80px" valign="middle">
+                    <div class="convert_button_left">
+                        <input class="bijoy_button" onclick="ConvertToTextArea(&#39;CONVERTEDT&#39;);" type="button" value="" name="ConvertToAsciiButton">
+                        <input class="reset_button" type="button" value="" onclick="ClearInput();">
+                        <input class="unicode_button" onclick="ConvertFromTextArea(&#39;CONVERTEDT&#39;);" type="button" value="" name="ConvertButton">
+                    </div>
+                </td>
+			</tr>
+			<tr>
+				<td align="center">
+                    <div>
+                        <textarea class="bijoy_textarea" id="CONVERTEDT" name="textarea" autofocus="autofocus" value="" placeholder="বিজয় কি-বোর্ডের লেখা এখানে পেস্ট করুন"></textarea>
+                    </div>
+                </td>
+			</tr>
+		</tbody>
+	</table>
+    <br>
+	<div id="footer">
+        <img alt="Graphical Line" src="./images/graphical_line.png" width="100%" height="40">   
+    </div>
+	<script type="text/javascript">
+        function ClearInput()
+        {
+            document.getElementById("EDT").value='';
+            document.getElementById("CONVERTEDT").value='';
+            document.getElementById("EDT").focus();
+        }
+    </script>
+</body>
+</html>
